@@ -1,85 +1,204 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon1.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="ICSERA2024">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ICSERA2024 - Paper Submission Guidelines">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>ICSERA2024</title>
+    <meta name="KeyWords" content="Conference, Submission, EasyChair, ICSERA2024">
+    <title>ICSERA 2024 | Submission</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', /* Deep blue */
+                            teal: '#2dd4bf', /* Mint/Teal accent */
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        img[alt] { font-size: 0.8rem; color: #64748b; text-align: center; }
+    </style>
 </head>
+<body class="bg-slate-100 text-gray-800 font-sans antialiased">
 
-<body>
+    <nav class="bg-brand-blue text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand-teal text-white p-2 rounded-lg">
+                        <i class="fas fa-file-upload text-xl"></i>
+                    </div>
+                    <span class="font-heading font-bold text-2xl tracking-wider text-white">ICSERA <span class="text-brand-teal">2024</span></span>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-1">
+                        <a href="." class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Home</a>
+                        <a href="important information" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Important Dates</a>
+                        <a href="submissions" class="bg-brand-teal text-brand-dark px-4 py-2 rounded-md text-sm font-bold shadow-md transition">Submission</a>
+                        <a href="registration" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Registration</a>
+                        <a href="program" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Program</a>
+                    </div>
+                </div>
 
-    <div class="banner">
-        <img src="assets/banner3.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">ICSERA2024</span>
-            <span class="title2"></span> 
-            <span class="year"></span>
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-brand-teal focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="mid-cent">
-            The 8th International Conference on Saving Energy in Refrigeration and Air-Conditioning
+    </nav>
+
+    <header class="relative bg-brand-dark overflow-hidden py-16">
+        <div class="absolute inset-0">
+            <img src="assets/banner3.jpg" alt="Conference Banner" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/90 to-brand-dark/90"></div>
         </div>
-        <div class="bottom-right">
-            September 26-28, 2024 <br>HCMUTE, Ho Chi Minh City, Vietnam
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl font-heading mb-4">
+                Call for Papers & Submissions
+            </h1>
+            <p class="text-lg text-brand-teal font-medium max-w-3xl mx-auto">
+                The 8th International Conference on Saving Energy in Refrigeration and Air-Conditioning
+            </p>
+            <div class="mt-4 flex justify-center items-center gap-2 text-sm text-gray-300">
+                <i class="far fa-calendar-alt text-brand-teal"></i>
+                <span>September 26-28, 2024</span>
+                <span class="mx-2 text-gray-500">|</span>
+                <i class="fas fa-map-marker-alt text-brand-teal"></i>
+                <span>HCMUTE, Ho Chi Minh City, Vietnam</span>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Important Dates" href="important information">Important Dates</a>
-            </td>
-            <td class="navigation">
-                <a class="current" title="Submission" href="submissions">Submission</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-        </tr>
-    </table>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
 
-    <h3>Submission</h3>
-    <p>
-        All submissions (abstracts/manuscripts) for ICSERA2024 should be submitted electronically using EasyChair 
-        platform: <a href="https://easychair.org/my/conference?conf=icsera2024">https://easychair.org/my/conference?conf=icsera2024</a> and will be reviewed by experts in the fields 
-        and ranked based on the criteria of significance, quality and clarity.
-    </p>
+        <section class="bg-white rounded-2xl shadow-lg border-t-4 border-brand-teal p-8 md:p-12 text-center relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 opacity-5">
+                <i class="fas fa-paper-plane text-9xl"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <h3 class="text-3xl font-heading font-bold text-brand-blue mb-4">Online Submission Portal</h3>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-lg">
+                    All submissions (abstracts and full manuscripts) for ICSERA2024 should be submitted electronically using the <strong>EasyChair</strong> platform. All papers will be reviewed by experts in the fields and ranked based on the criteria of significance, quality, and clarity.
+                </p>
+                
+                <a href="https://easychair.org/my/conference?conf=icsera2024" target="_blank" class="inline-flex items-center gap-3 bg-brand-blue text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-blue-800 shadow-xl transition transform hover:-translate-y-1">
+                    <i class="fas fa-external-link-alt text-brand-teal"></i>
+                    Submit via EasyChair
+                </a>
+            </div>
+        </section>
 
-    <h4>Abstract</h4>
-    <p>
-        We are asking authors to submit abstracts (not more than 250 words) by the submission deadline of 
-        April 15th, 2024 24:00 PM (GMT +7). Submitted abstracts must be genuine, concise and factual.
-    </p>
+        <section>
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-2 h-8 bg-brand-teal rounded-full"></div>
+                <h3 class="text-2xl font-heading font-bold text-brand-blue uppercase">Submission Guidelines & Templates</h3>
+            </div>
 
-    <h4>Manuscript</h4>
-    <p>
-        The manuscripts must be prepared to ICSERA2024 guidelines in the conference template, full paper 6 pages and 
-        maximum 7 pages which can be downloaded the document through the following link.<br>
-        - Abstract template: <a href="assets/template/Abstract Template.docx">Download here</a> <br>
-        - Manuscript template: <a href="assets/template/Paper Template.docx">Download here</a> <br>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition">
+                    <div class="bg-brand-teal/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-align-left text-3xl text-brand-teal"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-blue mb-3">1. Abstract Submission</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We are asking authors to submit abstracts (not more than <strong class="text-gray-900">250 words</strong>) by the submission deadline of <strong class="text-red-600">April 15th, 2024 24:00 PM (GMT +7)</strong>. Submitted abstracts must be genuine, concise, and factual.
+                    </p>
+                    <a href="assets/template/Abstract Template.docx" class="inline-flex items-center gap-2 bg-slate-100 text-brand-blue font-semibold px-5 py-2.5 rounded-lg hover:bg-slate-200 border border-slate-300 transition w-full justify-center">
+                        <i class="fas fa-file-word text-blue-600 text-lg"></i>
+                        Download Abstract Template
+                    </a>
+                </div>
 
-        Selected and qualified papers will be recommended for publication in the special issue of 
-        <a href="https://link.springer.com/journal/44189">International Journal of Air-Conditioning and Refrigeration</a> (SCIE) or 
-        <a href="https://www.tj.kyushu-u.ac.jp/evergreen/">Evergreen Journal</a> (SCOPUS indexed)
-        with peer review after conference. 
-    </p>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition">
+                    <div class="bg-brand-blue/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-3xl text-brand-blue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-blue mb-3">2. Full Manuscript Submission</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        The manuscripts must be prepared according to ICSERA2024 guidelines using the official conference template. Full papers must be <strong class="text-gray-900">6 pages</strong> (maximum 7 pages).
+                    </p>
+                    <a href="assets/template/Paper Template.docx" class="inline-flex items-center gap-2 bg-brand-teal/10 text-brand-blue font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-teal/20 border border-brand-teal/30 transition w-full justify-center">
+                        <i class="fas fa-file-word text-blue-600 text-lg"></i>
+                        Download Manuscript Template
+                    </a>
+                </div>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://icsera2024.org">ICSERA2024</a>
+            </div>
+        </section>
+
+        <section class="bg-brand-dark rounded-2xl shadow-lg border border-gray-800 p-8 relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 opacity-10">
+                <i class="fas fa-book text-9xl"></i>
+            </div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-shrink-0 bg-brand-teal text-brand-dark w-20 h-20 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fas fa-award text-4xl"></i>
+                </div>
+                
+                <div class="flex-1">
+                    <h4 class="text-2xl font-heading font-bold text-white mb-3">Publication Opportunities</h4>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Selected and qualified papers will be recommended for publication in special issues with peer review after the conference:
+                    </p>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://link.springer.com/journal/44189" target="_blank" class="flex items-center gap-3 text-brand-teal hover:text-white transition group">
+                                <i class="fas fa-chevron-right text-sm"></i>
+                                <span class="font-medium">International Journal of Air-Conditioning and Refrigeration <span class="bg-white/10 text-white text-xs px-2 py-0.5 rounded ml-2 group-hover:bg-brand-teal group-hover:text-brand-dark transition">SCIE</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tj.kyushu-u.ac.jp/evergreen/" target="_blank" class="flex items-center gap-3 text-brand-teal hover:text-white transition group">
+                                <i class="fas fa-chevron-right text-sm"></i>
+                                <span class="font-medium">Evergreen Journal <span class="bg-white/10 text-white text-xs px-2 py-0.5 rounded ml-2 group-hover:bg-brand-teal group-hover:text-brand-dark transition">SCOPUS indexed</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-dark text-gray-400 py-10 mt-12 border-t-4 border-brand-teal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-file-upload text-brand-teal text-2xl"></i>
+                <span class="font-heading font-bold text-xl text-white">ICSERA <span class="text-brand-teal">2024</span></span>
+            </div>
+            
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; Conference Organizers. All rights reserved.</p>
+                <p class="mt-1">Design by <a href="https://icsera2024.org" class="text-brand-teal hover:underline">ICSERA2024</a></p>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
-
