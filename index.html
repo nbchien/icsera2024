@@ -1,208 +1,325 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon1.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="ICSERA2024">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ICEGJ 2026 - The 1st International Conference and Exhibition of Green Jobs">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>ICSERA2024</title>
+    <meta name="KeyWords" content="Conference, Green Jobs, ICEGJ, ICSERA">
+    <title>ICEGJ 2026 | Conference Home</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', /* Màu xanh Navy đậm tương tự UTM/IC-ENSURES */
+                            teal: '#2dd4bf', /* Màu xanh ngọc làm điểm nhấn */
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Cuộn trang mượt mà */
+        html { scroll-behavior: smooth; }
+        /* Style cho các ảnh bị lỗi đường dẫn */
+        img[alt] { font-size: 0.8rem; color: #64748b; text-align: center; }
+    </style>
 </head>
+<body class="bg-slate-100 text-gray-800 font-sans antialiased">
 
-<body>
+    <nav class="bg-brand-blue text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand-teal text-white p-2 rounded-lg">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <span class="font-heading font-bold text-2xl tracking-wider text-white">ICEGJ <span class="text-brand-teal">2026</span></span>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-1">
+                        <a href="." class="bg-white/10 text-brand-teal px-4 py-2 rounded-md text-sm font-semibold transition">Home</a>
+                        <a href="#important-dates" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Important Dates</a>
+                        <a href="#submissions" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Submission</a>
+                        <a href="#registration" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Registration</a>
+                        <a href="#program" class="hover:bg-white/10 hover:text-brand-teal px-4 py-2 rounded-md text-sm font-medium transition duration-200">Program</a>
+                    </div>
+                </div>
 
-    <div class="banner">
-        <img src="assets/banner3.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">ICEGJ2026</span>
-            <span class="title2"></span> 
-            <span class="year"></span>
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-brand-teal focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-brand-dark overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" alt="Conference Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/90 to-brand-dark/90"></div>
         </div>
 
-        <div class="mid-cent">
-            The 1st International Conference and Exhibition of Green Jobs
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-4 py-1 rounded-full bg-brand-teal/20 text-brand-teal font-semibold text-sm tracking-widest uppercase mb-6 border border-brand-teal/50">
+                ICEGJ 2026
+            </span>
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-heading leading-tight">
+                The 1st International Conference <br class="hidden md:block"> and Exhibition of Green Jobs
+            </h1>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 text-lg text-gray-300 font-medium">
+                <div class="flex items-center gap-2">
+                    <i class="far fa-calendar-alt text-brand-teal"></i>
+                    <span>October 26-29, 2026</span>
+                </div>
+                <span class="hidden sm:inline text-gray-500">|</span>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-brand-teal"></i>
+                    <span>HCMUTE, Ho Chi Minh City, Vietnam</span>
+                </div>
+            </div>
+            
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#registration" class="px-8 py-3 rounded-lg bg-brand-teal text-brand-dark font-bold hover:bg-teal-300 shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    Register Now
+                </a>
+                <a href="#submissions" class="px-8 py-3 rounded-lg bg-white/10 text-white font-bold hover:bg-white/20 border border-white/20 shadow-lg transition duration-300">
+                    Submit Paper
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-2 h-8 bg-brand-teal rounded-full"></div>
+                    <h3 class="text-2xl font-heading font-bold text-brand-blue uppercase">ICSERA History</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    International Conference of Saving Energy in Refrigeration and Air-Conditioning (ICSERA) started in Jakarta, Indonesia in 2009 and has been followed by Bali (2011), Yeosu (2013), Lombok (2015), Bali (2017), Seoul (2019) and Johor Bahru (2021 - online). ICSERA is a forum for exchanging the latest scientific and technological information in technologies for saving energy focus on but not limited to the field of refrigeration and air-conditioning industries.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-2 h-8 bg-brand-teal rounded-full"></div>
+                    <h3 class="text-2xl font-heading font-bold text-brand-blue uppercase">Conference Venue</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    The 8th International Conference of Saving Energy in Refrigeration and Air-Conditioning is organized at Ho Chi Minh City University of Technology and Education 
+                    <a href="https://hcmute.edu.vn/" class="text-brand-teal font-semibold hover:underline">(HCMUTE)</a>, Vietnam.
+                </p>
+                <div class="bg-gray-50 rounded-xl p-4 flex justify-center border border-gray-200">
+                    <a href="https://hcmute.edu.vn/">
+                        <img src="assets/hcmute_location.png" alt="HCMUTE Location Map" class="max-h-48 object-contain rounded">
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="bottom-right">
-            Octorber 26-29, 2024 <br>HCMUTE, Ho Chi Minh City, Vietnam
+        <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-2 h-8 bg-brand-teal rounded-full"></div>
+                <h3 class="text-2xl font-heading font-bold text-brand-blue uppercase">Leadership & Secretariat</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b-2 border-brand-teal/30 inline-block">Conference Chairperson</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user-tie text-brand-teal mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong class="text-gray-900 block">Assoc. Prof. Le Hieu Giang</strong> Acting President of Ho Chi Minh City University of Technology and Education, Vietnam</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user-tie text-brand-teal mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong class="text-gray-900 block">Assoc. Prof. Hoang An Quoc</strong> Ho Chi Minh City University of Technology and Education, Vietnam</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user-tie text-brand-teal mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong class="text-gray-900 block">Assoc. Prof. Dang Thanh Trung</strong> Ho Chi Minh City University of Technology and Education, Vietnam</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user-tie text-brand-teal mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong class="text-gray-900 block">Assoc. Prof. Nguyen Viet Dzung</strong> Vice Dean of School of Mechanical Engineering, Hanoi University of Science and Technology, Vice President of VISRAE, Vietnam</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b-2 border-brand-teal/30 inline-block">Secretariat</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user text-brand-blue mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong>Dr. Trinh Quoc Dung</strong><br>Hanoi University of Science and Technology, Vietnam</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user text-brand-blue mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong>Dr. Tran Thanh Tinh</strong><br>Ho Chi Minh City University of Technology and Education, Vietnam</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <i class="fas fa-user text-brand-blue mt-1"></i>
+                            <span class="text-gray-700 text-sm"><strong>Dr. Nguyen Ba Chien</strong><br>Hanoi University of Science and Technology, Vietnam</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-2 h-8 bg-brand-teal rounded-full"></div>
+                <h3 class="text-2xl font-heading font-bold text-brand-blue uppercase">Committees</h3>
+            </div>
+
+            <div class="space-y-10">
+                <div>
+                    <h4 class="text-xl font-bold text-brand-teal mb-4"><i class="fas fa-users mr-2"></i> Organizing Committee</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Nguyen Xuan Tien (VISRAE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Tran Quoc Khanh (VISRAE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Assoc. Prof. Le Minh Nhut (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Le Duc Dung (HUST)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Assoc. Prof. Dang Tran Tho (HUST)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Nguyen Dinh Vinh (HUST)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Ho Huu Phung (HUST)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Doan Minh Hung (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Dang Hung Son (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Nguyen Van Vu (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Nguyen Xuan Vien (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Dr. Nguyen Tran Phu (HCMUTE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Mrs. Nguyen Thi Hoan (VISRAE)</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Mr. Vu Tuan Anh (HUST)</span></div>
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <div>
+                    <h4 class="text-xl font-bold text-brand-teal mb-4"><i class="fas fa-microscope mr-2"></i> Scientific Advisory Committee</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Jong-Taek Oh, Korea</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Jae Dong Chung, Korea</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Honghyun Cho, Korea</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Minsung Kim, Korea</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Ruzhu Wang, China</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Kiyoshi Saito, Japan</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Dr. Kyaw Thu, Japan</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Normah Mohd Ghazali, Malaysia</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Nor Atiqah Zolpakar, Malaysia</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Dr. Ir. Muhammad Idrus Alhamid, Indonesia</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Agus Sunjarianto Pamitran, Indonesia</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Nasruddin, Indonesia</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Fu-Jen Wang, Taiwan</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Nguyen Hay, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Nguyen Huy Bich, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Prof. Le Chi Hiep, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Pham Hoang Luong, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Bui Trung Thanh, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Tran Thanh Son, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Phan Qui Tra, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Tran Ngoc Quang, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Nguyen Thanh Trung, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Do Huu Hoang, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Ha Anh Tung, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Huynh Phuoc Hien, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Tran Gia My, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Assoc. Prof. Lai Ngoc Anh, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Vu Huy Khue, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Ta Van Chuong, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Le Kieu Hiep, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Tran Thi Thu Hang, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Truong Minh Thang, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Do Manh Hung, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Trinh Viet Thieu, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Nguyen Quoc Uy, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Pham Quang Vu, Vietnam</span></div>
+                        <div class="text-sm text-gray-700 flex gap-2"><i class="fas fa-circle text-[8px] text-brand-blue mt-2"></i> <span>Dr. Duong Xuan Quang, Vietnam</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-brand-blue text-white rounded-2xl p-8 shadow-lg relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 opacity-10">
+                    <i class="fas fa-book-open text-9xl"></i>
+                </div>
+                <h3 class="text-2xl font-heading font-bold mb-4 relative z-10">Conference Proceedings</h3>
+                <p class="text-brand-light/90 leading-relaxed relative z-10">
+                    The Conference Proceedings containing the extended abstracts presented will be distributed in USB. The USB will include papers accepted for presentation, provided at least one author has pre-registered by the deadline.
+                </p>
+            </div>
+
+            <div class="bg-brand-teal text-brand-dark rounded-2xl p-8 shadow-lg relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 opacity-20">
+                    <i class="fas fa-newspaper text-9xl"></i>
+                </div>
+                <h3 class="text-2xl font-heading font-bold mb-4 relative z-10">Journal Publications</h3>
+                <p class="text-brand-dark/90 leading-relaxed mb-4 relative z-10">
+                    Selected and qualified papers will be recommended for publication in the special issue of:
+                </p>
+                <ul class="space-y-2 relative z-10 font-medium">
+                    <li><i class="fas fa-angle-right mr-2"></i> <a href="https://link.springer.com/journal/44189" class="hover:underline text-brand-blue">Intl. Journal of Air-Conditioning and Refrigeration (ESCI)</a></li>
+                    <li><i class="fas fa-angle-right mr-2"></i> <a href="https://www.tj.kyushu-u.ac.jp/evergreen/" class="hover:underline text-brand-blue">Evergreen Journal (SCOPUS indexed)</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Information Dates" href="important information">Important Dates</a>
-            </td>
-            <td class="navigation">
-                <a title="Submission" href="submissions">Submission</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-        </tr>
-    </table>
-
-    <h3>ICSERA History</h3>
-    <p>
-        International Conference of Saving Energy in Refrigeration and Air-Conditioning (ICSERA) started in Jakarta, 
-        Indonesia in 2009 and has been followed by Bali (2011), Yeosu (2013), Lombok (2015), Bali (2017), Seoul (2019)
-        and Johor Bahru (2021 - online). ICSERA is a forum for exchanging the latest scientific and technological 
-        information in technologies for saving energy focus on but not limited to the field of refrigeration and 
-        air-conditioning industries. 
-    </p>
-
-    <h3>ICSERA 2024</h3>
-    <p>
-        The 8th International Conference of Saving Energy in Refrigeration and Air-Conditioning is organized at Ho Chi Minh City
-        University of Technology and Education <a href="https://hcmute.edu.vn/">(HCMUTE)</a>, Vietnam.
-    </p>
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-                <a href="https://hcmute.edu.vn/">
-                    <img src="assets/hcmute_location.png" alt="HCMUTE">
+        <section class="text-center pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-heading font-bold text-gray-400 uppercase tracking-widest mb-8">Organizers & Sponsors</h3>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <a href="http://sarek.or.kr" class="grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                    <img src="assets/sarek.png" alt="SAREK" class="h-16 object-contain">
                 </a>
-            </td>
-        </tr>
-    </table>
-
-    <h3>Conference Chairperson</h3>
-    <p>
-        Assoc. Prof. Le Hieu Giang, Acting President of Ho Chi Minh City University of Technology and Education, Vietnam<br>
-        Assoc. Prof. Hoang An Quoc, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Assoc. Prof. Dang Thanh Trung, Ho Chi Minh City University of Technology and Education, Vietnam<br>
-        Assoc. Prof. Nguyen Viet Dzung, Vice Dean of School of Mechanical Engineering,
-        Hanoi University of Science and Technology, Vice President of VISRAE, Vietnam<br>
-    </p>
-
-    <h3>Secretariat</h3>
-    <p>
-        Dr. Trinh Quoc Dung, Hanoi University of Science and Technology, Vietnam <br>
-        Dr. Tran Thanh Tinh, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Dr. Nguyen Ba Chien, Hanoi University of Science and Technology, Vietnam <br>
-    </p>
-
-    <h3>Organizing Committee</h3>
-    <p>
-        Dr. Nguyen Xuan Tien, General Secretariat and Vice President of Vietnam Society of Refrigeration and Air-Conditioning Engineers, Vietnam <br>
-        Dr. Tran Quoc Khanh, Vice President of Vietnam Society of Refrigeration and Air-Conditioning Engineers, Vietnam <br>
-        Assoc. Prof. Le Minh Nhut, Ho Chi Minh City University of Technology and Education, Vietnam<br>
-        Dr. Le Duc Dung, Hanoi University of Science and Technology, Vietnam<br>
-        Assoc. Prof. Dang Tran Tho, Hanoi University of Science and Technology, Vietnam <br>
-        Dr. Nguyen Dinh Vinh, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Ho Huu Phung, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Doan Minh Hung, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Dr. Dang Hung Son, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Dr. Nguyen Van Vu, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Dr. Nguyen Xuan Vien, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Dr. Nguyen Tran Phu, Ho Chi Minh City University of Technology and Education, Vietnam <br>
-        Mrs. Nguyen Thi Hoan, Vietnam Society of Refrigeration and Air-Conditioning Engineers, Vietnam <br>
-        Mr. Vu Tuan Anh, Hanoi University of Science and Technology, Vietnam<br>
-    </p>
-
-    <h3>Scientific Advisory Committee</h3>
-    <p>
-        Prof. Jong-Taek Oh, Chonnam National University, Korea<br>
-        Prof. Jae Dong Chung, Sejong University, Korea <br>
-        Prof. Honghyun Cho, Chosun University, Korea<br>
-        Prof. Minsung Kim, Chung Ang University, Korea<br>
-        Prof. Ruzhu Wang, Shanghai Jiao Tong University, China <br>
-        Prof. Kiyoshi Saito, Waseda University, Japan <br>
-        Assoc. Prof. Dr. Kyaw Thu, Kyushu University of Japan <br>
-        Prof. Normah Mohd Ghazali, Universiti Teknologi Malaysia, Malaysia<br>
-        Dr. Nor Atiqah Zolpakar, Universiti Malaysia Pahang, Malaysia <br>
-        Prof. Dr. Ir. Muhammad Idrus Alhamid, Universitas of Indonesia, Indonesia <br>
-        Prof. Agus Sunjarianto Pamitran, Universitas of Indonesia, Indonesia <br>
-        Prof. Nasruddin, Universitas of Indonesia, Indonesia <br>
-        Prof. Fu-Jen Wang, National Chin-Yi University of Technology, Taiwan <br>
-        Prof. Nguyen Hay, Nong Lam University, Vietnam <br>
-        Prof. Nguyen Huy Bich, Nong Lam University, Vietnam <br>
-        Prof. Le Chi Hiep, Ho Chi Minh City University of Technology, Vietnam <br>
-        Assoc. Prof. Pham Hoang Luong, Hanoi University of Science and Technology, Vietnam <br>
-        Assoc. Prof. Bui Trung Thanh, Industrial University of Ho Chi Minh City, Vietnam <br>
-        Assoc. Prof.  Tran Thanh Son, Danang University, Vietnam <br>
-        Assoc. Prof.  Phan Qui Tra, Danang University, Vietnam <br>
-        Assoc. Prof. Tran Ngoc Quang, Hanoi University of Civil Engineering, Vietnam <br>
-        Dr. Nguyen Thanh Trung, Hanoi University of Civil Engineering, Vietnam <br>
-        Dr. Do Huu Hoang, HCMC University of Industrial and Trade, Vietnam <br>
-        Assoc. Prof. Ha Anh Tung, Ho Chi Minh City University of Technology, Vietnam <br>
-        Dr. Huynh Phuoc Hien, Ho Chi Minh City University of Technology, Vietnam <br>
-        Assoc. Prof. Tran Gia My, East Asia University of Technology, Vietnam <br>
-        Assoc. Prof. Lai Ngoc Anh, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Vu Huy Khue, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Ta Van Chuong, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Le Kieu Hiep, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Tran Thi Thu Hang, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Truong Minh Thang, University of Transport and Communication, Vietnam<br>
-        Dr. Do Manh Hung, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Trinh Viet Thieu, Hanoi University of Science and Technology, Vietnam<br>
-        Dr. Nguyen Quoc Uy, Electric Power University, Vietnam <br>
-        Dr. Pham Quang Vu, Electric Power University, Vietnam <br>
-        Dr. Duong Xuan Quang, Vietnam Maritime University, Vietnam
-    </p>
-
-    <h3>Conference Proceedings</h3>
-    <p>
-        The Conference Proceedings containing the extended abstracts presented will be distributed in USB. 
-        The USB will include papers accepted for presentation, provided at least one author has pre-registered 
-        by the deadline. 
-    </p>
-
-    <h3>Journal Publications</h3>
-    <p>
-        Selected and qualified papers will be recommended for publication in the special issue of 
-        <a href="https://link.springer.com/journal/44189">International Journal of Air-Conditioning and Refrigeration</a> (ESCI) or 
-        <a href="https://www.tj.kyushu-u.ac.jp/evergreen/">Evergreen Journal</a> (SCOPUS indexed)
-        with peer review after conference.  
-    </p>
-
-    <h3>Organizers</h3>
-    
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-                <a href="http://sarek.or.kr">
-                    <img src="assets/sarek.png" alt="SAREK">
+                <a href="http://lanhdhkk.com.vn/" class="grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                    <img src="assets/visrae.png" alt="VISRAE" class="h-16 object-contain">
                 </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://lanhdhkk.com.vn/">
-                    <img src="assets/visrae.png" alt="VISRAE" style="width: 80%">
+                <a href="https://hcmute.edu.vn/" class="grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                    <img src="assets/hcmute.png" alt="HCMUTE" class="h-16 object-contain">
                 </a>
-            </td>
-            <td class="sponsor">
-                <a href="https://hcmute.edu.vn/">
-                    <img src="assets/hcmute.png" alt="HCMUTE">
+                <a href="http://icsera2024.org" class="grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100 border-l border-gray-300 pl-8">
+                    <img src="assets/Sponsor1.png" alt="Sponsor 1" class="h-16 object-contain">
                 </a>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </section>
 
-    
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-                <a href="http://icsera2024.org">
-                    <img src="assets/Sponsor1.png" alt="Sponsors">
-                </a>
-            </td>
-        </tr>
-    </table>
+    </main>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://icsera2024.org">ICSERA2024</a>
+    <footer class="bg-brand-dark text-gray-400 py-10 mt-12 border-t-4 border-brand-teal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-leaf text-brand-teal text-2xl"></i>
+                <span class="font-heading font-bold text-xl text-white">ICEGJ <span class="text-brand-teal">2026</span></span>
+            </div>
+            
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; Conference Organizers. All rights reserved.</p>
+                <p class="mt-1">Design inspired by <a href="https://icsera2024.org" class="text-brand-teal hover:underline">ICSERA2024 / IC-ENSURES</a></p>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
-
